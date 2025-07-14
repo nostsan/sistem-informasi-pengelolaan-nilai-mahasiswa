@@ -1,9 +1,7 @@
 services:
   - type: web
-    name: sistem-nilai-flask
+    name: sistem-informasi-nilai
     env: python
-    buildCommand: pip install -r requirements.txt
-    startCommand: python app.py
-    envVars:
-      - key: FLASK_ENV
-        value: production
+    buildCommand: "pip install -r requirements.txt"
+    startCommand: "python app.py"
+    plan: free
